@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Novo Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.nome" name="nome" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)" [(ngModel)]="product.valor" name="valor" type="number" required>
+        </mat-form-field>
+        <input fileInput name="file" type="file" (change)="onFileSelected($event)" required>
+        <img [src]="cardImageBase64" *ngIf="cardImageBase64">
+    </form>
+    <button mat-raised-button (click)="cancel()" class="azul" color="secondary">
+        Cancelar
+    </button>
+    <button mat-raised-button (click)="createProduct()" color="primary">
+        Salvar
+    </button>
+
+</mat-card>

@@ -1,0 +1,28 @@
+.sidenavContent {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+button {
+    margin: 20px 15px 0px 0px;
+}
+
+.loginCard {
+    display: flex;
+    flex: initial;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.btnEntrar {
+    display: flex;
+    justify-content: flex-end;
+}

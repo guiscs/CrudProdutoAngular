@@ -1,0 +1,16 @@
+<div class="loginCard">
+    <mat-card class="mat-elevation-z3 mat-card-xl-image">
+        <mat-card-title>Fazer Login</mat-card-title>
+        <form>
+            <mat-form-field>
+                <input matInput placeholder="Usuário" [(ngModel)]="user.userName" name="userName" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Senha" name="password" [(ngModel)]="user.password" type="password" required>
+            </mat-form-field>
+        </form>
+        <button class="btnEntrar" mat-raised-button (click)="login()" color="primary">
+                Entrar
+            </button>
+    </mat-card>
+</div>
